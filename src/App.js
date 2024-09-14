@@ -24,7 +24,7 @@ const App = () => {
     <Router>
       <div className="app-container">
         <header className="header">
-          <h1>Fast Finder Search Bar</h1>
+          <h3>Fast Finder Search Bar</h3>
         </header>
         <SearchBar countries={countries} />
         <Routes>
