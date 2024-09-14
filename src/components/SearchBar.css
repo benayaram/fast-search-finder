@@ -1,0 +1,101 @@
+/* Container for the search bar */
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* Google-style search input */
+.search-input {
+  width: 60%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 50px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  box-shadow: 0 4px 8px rgba(32, 33, 36, 0.3);
+  border-color: #a8abaf;
+}
+
+.search-input::placeholder {
+  color: #9aa0a6;
+  opacity: 1; /* Override default opacity for better readability */
+}
+
+/* Suggestions box */
+.suggestions {
+  position: absolute;
+  width: 60%;
+  max-width: 600px;
+  background: white;
+  border: 1px solid #dfe1e5;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  margin-top: 5px;
+  z-index: 10;
+  max-height: 300px; /* Optional: limit height and add scroll */
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f3f4;
+}
+
+/* Country name and capital styling */
+.country-name {
+  font-weight: bold;
+}
+
+.capital-name {
+  color: #70757a;
+}
+
+/* Wrapper for search bar and icon */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the search icon */
+.search-icon {
+  position: absolute;
+  left: 20px;
+  color: #9aa0a6;
+  font-size: 1.5rem; /* Slightly larger for better visibility */
+}
+
+/* Padding adjustment to leave space for the icon */
+.search-input {
+  padding-left: 50px; /* Adjust based on the size of the icon */
+}
+
+/* Ensure responsiveness for mobile screens */
+@media (max-width: 768px) {
+  .search-input {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .suggestions {
+    width: 90%;
+  }
+}

@@ -1,0 +1,15 @@
+/* Styling for the country list */
+.country-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .country-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .country-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
