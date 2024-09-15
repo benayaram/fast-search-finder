@@ -125,3 +125,43 @@ body {
   }
 }
 
+
+
+
+
+
+
+
+.app-container {
+  position: relative;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-right-image-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.top-right-image {
+  width: 250px; /* Adjust this size as needed */
+  height: 50px;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+@media (max-width: 768px) {
+  .top-right-image {
+    width: 250px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-right-image {
+    width: 300px; /* Further adjust for smaller screens */
+  }
+}
